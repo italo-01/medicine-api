@@ -3,6 +3,7 @@ package com.udemy.PrimeiroProjetoSpring.controller;
 import com.udemy.PrimeiroProjetoSpring.remedio.DadosCadastroRemedio;
 import com.udemy.PrimeiroProjetoSpring.remedio.Remedio;
 import com.udemy.PrimeiroProjetoSpring.remedio.RemedioRepository;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -17,7 +18,7 @@ public class RemedioController {
     private RemedioRepository repository;
 
     @PostMapping
-    public void cadastrar(@RequestBody DadosCadastroRemedio dados){
+    public void cadastrar(@RequestBody @Valid DadosCadastroRemedio dados){
         repository.save(new Remedio(dados));
 
     }
