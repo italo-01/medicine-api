@@ -34,9 +34,9 @@ public class RemedioController {
         var remedio = repository.getReferenceById(dados.id());
         remedio.atualizarInformacoes(dados);
     }
-    @DeleteMapping
+    @DeleteMapping("/{id}")
     @Transactional
-    public void deletar(DadosDeletarRemedio dados){
-
+    public void deletar(@PathVariable long id){
+        repository.deleteById(id);
     }
 }
