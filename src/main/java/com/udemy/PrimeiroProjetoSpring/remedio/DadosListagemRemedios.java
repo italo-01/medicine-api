@@ -2,8 +2,9 @@ package com.udemy.PrimeiroProjetoSpring.remedio;
 
 import java.time.LocalDate;
 
-public record DadosListagemRemedios(String nome, Via via, String lote, Laboratorio laboratorio, LocalDate validade) {
+public record DadosListagemRemedios(long id, String nome, Via via, String lote, Laboratorio laboratorio, LocalDate validade) {
     public DadosListagemRemedios(Remedio remedio){
-        this(remedio.getNome(), remedio.getVia(), remedio.getLote(), remedio.getLaboratorio(), remedio.getValidade());
+        this(remedio.getId(), remedio.getNome(), remedio.getVia(), remedio.getLote(), remedio.getLaboratorio(), remedio.getValidade());
+
     }
 }

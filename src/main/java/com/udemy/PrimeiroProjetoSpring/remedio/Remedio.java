@@ -1,6 +1,7 @@
 package com.udemy.PrimeiroProjetoSpring.remedio;
 
 import jakarta.persistence.*;
+import jakarta.validation.Valid;
 import lombok.*;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -36,6 +37,18 @@ public class Remedio {
         this.quantidade = dados.quantidade();
         this.validade = dados.validade();
         this.laboratorio = dados.laboratorio();
+    }
+
+    public void atualizarInformacoes(@Valid DadosAtualizarRemedio dados) {
+        if (dados.nome () != null){
+            this.nome = dados.nome();
+        }
+        if (dados.via() != null){
+            this.via = dados.via();
+        }
+        if (dados.laboratorio() != null){
+            this.laboratorio = dados.laboratorio();
+        }
     }
 }
 
