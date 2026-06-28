@@ -30,7 +30,10 @@ public class Remedio {
     @Enumerated(EnumType.STRING)
     private Laboratorio laboratorio;
 
+    private Boolean ativo;
+
     public Remedio(DadosCadastroRemedio dados) {
+        this.ativo = true;
         this.nome = dados.nome();
         this.via = dados.via();
         this.lote = dados.lote();
@@ -49,6 +52,14 @@ public class Remedio {
         if (dados.laboratorio() != null){
             this.laboratorio = dados.laboratorio();
         }
+    }
+
+    public void inativarRemedio() {
+        this.ativo = false;
+    }
+
+    public void ativarRemedio() {
+        this.ativo = true;
     }
 }
 
