@@ -44,6 +44,7 @@ public class RemedioController {
 
         return ResponseEntity.ok(new DadosDetalhamentoRemedio(remedio));
     }
+
     @DeleteMapping("/{id}")
     @Transactional
     public ResponseEntity<Void>deletar(@PathVariable long id){
@@ -69,6 +70,7 @@ public class RemedioController {
 
         return ResponseEntity.noContent().build();
     }
+
     @GetMapping("{id}")
     public ResponseEntity<DadosDetalhamentoRemedio> buscar(@PathVariable long id){
         var remedio = repository.getReferenceById(id);
