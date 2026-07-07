@@ -1,6 +1,7 @@
 package com.udemy.PrimeiroProjetoSpring.controller;
 
 import com.udemy.PrimeiroProjetoSpring.infra.TokenService;
+import com.udemy.PrimeiroProjetoSpring.infra.dadosToken;
 import com.udemy.PrimeiroProjetoSpring.usuarios.DadosAutenticacao;
 import com.udemy.PrimeiroProjetoSpring.usuarios.Usuario;
 import jakarta.validation.Valid;
@@ -25,7 +26,10 @@ public class AutenticacaoController {
         var token  = new UsernamePasswordAuthenticationToken(dados.login(), dados.senha());
         var authenticacao = manager.authenticate(token);
 
-        return ResponseEntity.ok(tokenservice.gerarToken((Usuario) authenticacao.getPrincipal()));
+        var tokenJWT = tokenservice.gerarToken((Usuario) authenticacao.getPrincipal());
+
+        return ResponseEntity.ok(new dadosToken(tokenJWT));
     }
+
 }
 
