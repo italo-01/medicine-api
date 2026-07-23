@@ -17,6 +17,8 @@ public class RemedioController {
     @Autowired
     private RemedioRepository repository;
 
+
+
     @PostMapping
     @Transactional
     public ResponseEntity<DadosDetalhamentoRemedio> cadastrar(@RequestBody @Valid DadosCadastroRemedio dados, UriComponentsBuilder uribuilder) {
