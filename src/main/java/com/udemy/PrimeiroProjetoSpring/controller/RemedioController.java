@@ -1,5 +1,9 @@
 package com.udemy.PrimeiroProjetoSpring.controller;
 
+import com.udemy.PrimeiroProjetoSpring.DTOs.DadosAtualizarRemedio;
+import com.udemy.PrimeiroProjetoSpring.DTOs.DadosCadastroRemedio;
+import com.udemy.PrimeiroProjetoSpring.DTOs.DadosDetalhamentoRemedio;
+import com.udemy.PrimeiroProjetoSpring.DTOs.DadosListagemRemedios;
 import com.udemy.PrimeiroProjetoSpring.remedio.*;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;

@@ -1,4 +1,8 @@
-package com.udemy.PrimeiroProjetoSpring.remedio;
+package com.udemy.PrimeiroProjetoSpring.DTOs;
+
+import com.udemy.PrimeiroProjetoSpring.remedio.Laboratorio;
+import com.udemy.PrimeiroProjetoSpring.remedio.Remedio;
+import com.udemy.PrimeiroProjetoSpring.remedio.Via;
 
 import java.time.LocalDate;
 

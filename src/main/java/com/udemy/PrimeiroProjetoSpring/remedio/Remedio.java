@@ -1,9 +1,10 @@
 package com.udemy.PrimeiroProjetoSpring.remedio;
 
+import com.udemy.PrimeiroProjetoSpring.DTOs.DadosAtualizarRemedio;
+import com.udemy.PrimeiroProjetoSpring.DTOs.DadosCadastroRemedio;
 import jakarta.persistence.*;
 import jakarta.validation.Valid;
 import lombok.*;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import java.time.LocalDate;
 
