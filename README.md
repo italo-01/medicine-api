@@ -242,5 +242,5 @@ Durante o desenvolvimento deste projeto foram estudados conceitos como:
 Estudante de Engenharia de Software com foco em desenvolvimento Backend utilizando Java e Spring Boot.
 
 - LinkedIn: https://www.linkedin.com/in/italo-costa-b9b7a12ab/
-- GitHub: https://github.com/SEU-USUARIO
+- GitHub: https://github.com/italo-01
 
