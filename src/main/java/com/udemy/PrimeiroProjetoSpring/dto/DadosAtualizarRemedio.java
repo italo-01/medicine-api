@@ -1,4 +1,4 @@
-package com.udemy.PrimeiroProjetoSpring.DTOs;
+package com.udemy.PrimeiroProjetoSpring.dto;
 
 import com.udemy.PrimeiroProjetoSpring.remedio.Laboratorio;
 import com.udemy.PrimeiroProjetoSpring.remedio.Via;

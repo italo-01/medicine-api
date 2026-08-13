@@ -1,7 +1,7 @@
 package com.udemy.PrimeiroProjetoSpring.remedio;
 
-import com.udemy.PrimeiroProjetoSpring.DTOs.DadosAtualizarRemedio;
-import com.udemy.PrimeiroProjetoSpring.DTOs.DadosCadastroRemedio;
+import com.udemy.PrimeiroProjetoSpring.dto.DadosAtualizarRemedio;
+import com.udemy.PrimeiroProjetoSpring.dto.DadosCadastroRemedio;
 import jakarta.persistence.*;
 import jakarta.validation.Valid;
 import lombok.*;

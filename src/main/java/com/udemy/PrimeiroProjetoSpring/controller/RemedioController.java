@@ -2,12 +2,11 @@ package com.udemy.PrimeiroProjetoSpring.controller;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import com.udemy.PrimeiroProjetoSpring.DTOs.DadosAtualizarRemedio;
-import com.udemy.PrimeiroProjetoSpring.DTOs.DadosCadastroRemedio;
-import com.udemy.PrimeiroProjetoSpring.DTOs.DadosDetalhamentoRemedio;
-import com.udemy.PrimeiroProjetoSpring.DTOs.DadosListagemRemedios;
+import com.udemy.PrimeiroProjetoSpring.dto.DadosAtualizarRemedio;
+import com.udemy.PrimeiroProjetoSpring.dto.DadosCadastroRemedio;
+import com.udemy.PrimeiroProjetoSpring.dto.DadosDetalhamentoRemedio;
+import com.udemy.PrimeiroProjetoSpring.dto.DadosListagemRemedios;
 import com.udemy.PrimeiroProjetoSpring.remedio.*;
-import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
